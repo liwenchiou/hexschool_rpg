@@ -1,0 +1,129 @@
+.container {
+    max-width: 960px;
+    padding: 0 12px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+nav {
+    width: 100vw;
+    margin-bottom: 32px;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .container ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+nav .container ul li a {
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+nav .container ul li button {
+    padding: 12px 8px;
+    color: rgb(61, 89, 80);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+nav .container ul li button:hover {
+    color: #fff;
+    background-color: rgb(61, 89, 80);
+
+}
+
+.nav--button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.container .banner {
+    background: url("./images/MTIwNjI1NDM2NDk2MDMwODQxOTE=_2025-03-13T08_39_15Z.jpeg");
+    background-size: cover;
+    /* 確保圖片填滿容器 */
+    background-position: center;
+    /* 讓圖片置中 */
+    background-repeat: no-repeat;
+    /* 避免重複顯示 */
+    padding: 40px;
+    height: 360px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.container .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, #fff0, #fff);
+}
+
+.container .banner .content {
+    position: absolute;
+    z-index: 1 !important;
+    bottom: 30%;
+}
+
+.container .banner .content h1 {
+    font-size: 31px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #00251a;
+    margin-bottom: 4px;
+}
+
+.container .banner .content h2 {
+    font-size: 31px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #00251a;
+    margin-bottom: 4px;
+}
+
+.container .banner .content a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(61, 89, 80);
+    margin-bottom: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tasklist--title h2{
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgb(61, 89, 80);
+}
+.tasklist--title .title--btn{
+    display: flex;
+    align-items: center;
+}
+.tasklist--title .title--btn a{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color:  rgb(61, 89, 80);
+}
+
+.tasklist--title .title--btn i{
+    font-size: 20px;
+
+}
