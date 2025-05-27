@@ -1,0 +1,270 @@
+.container {
+    max-width: 1320px;
+    padding: 0px 12px;
+    margin: 0 auto;
+}
+
+
+nav {
+    width: 100vw;
+    margin-bottom: 64px;
+    padding: 8px 0px;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .container ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    justify-content: center;
+}
+
+nav .container ul li a {
+    cursor: pointer;
+}
+
+nav .container ul li button {
+    padding: 12px 8px;
+    color: rgb(61, 89, 80);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+nav .container ul li button:hover {
+    color: #fff;
+    background-color: rgb(61, 89, 80);
+
+}
+
+.nav--button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.task {
+    display: flex;
+}
+
+
+
+.task .task--sidebar {
+    width: 31%;
+    border: 1px solid black;
+    padding: 0px 12px;
+}
+
+.task .task--sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 8px 16px;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    cursor: pointer;
+
+}
+
+.task .task--sidebar ul li a:hover {
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+.task .task--sidebar ul li i {
+    color: #3D5950;
+    padding: .25rem;
+    padding-right: .5rem;
+}
+
+.task .task--sidebar ul .active {
+    background-color: #EDF0EF;
+    color: rgb(61, 89, 80);
+    border-radius: 4px;
+    /* border: 1px solid black; */
+}
+
+.task .task--sidebar ul .active a {
+    color: rgb(61, 89, 80);
+}
+
+.task .task--content {
+    width: 69%;
+    border: 1px solid black;
+    padding: 0px 12px;
+}
+
+.task .task--content h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.task .task--content .task--ul1 ul {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.task .task--content .task--ul1 ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(222, 226, 230);
+    padding: 30px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.task .task--content .task--ul1 ul li h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(0, 37, 26);
+    margin-bottom: 4px;
+}
+
+.task .task--content .task--ul1 ul li p {
+    font-size: 30px;
+    color: rgb(0, 37, 26);
+    line-height: 1.5;
+    font-weight: 700;
+}
+.task .task--content .table--section{
+    width: 100%;
+    overflow-x: auto; /* 當內容過寬時，顯示滾動條 */
+    white-space: nowrap; /* 防止表格內的文字換行 */
+    margin-bottom: 16px;
+}
+.task .task--content table{
+
+        width: max-content; /* 讓表格寬度根據內容自動延伸 */
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    white-space: nowrap; /* 讓每個欄位的內容不換行 */
+}
+
+.task .task--content table thead {
+    border-spacing: 15px;
+    /* 設定間距 */
+    border-collapse: separate;
+    /* 確保間距生效 */
+    margin-bottom: 64px;
+}
+
+.task .task--content table thead tr th {
+    text-align: left;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.task .task--content table tbody {
+    background-color: #EDF0EF;
+}
+
+.task .task--content table tbody tr {
+    border-bottom: 1px solid rgb(213, 216, 215);
+}
+
+.task .task--content table tbody tr td {
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+/* 
+    white-space: nowrap; */
+}
+
+.task .task--content table tbody tr td span {
+    padding: 4px 16px;
+    border-radius: 800px;
+    background-color: rgb(121, 139, 134);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+
+
+@media(max-width:767px) {
+    .task {
+        flex-direction: column;
+    }
+
+    .task .task--sidebar {
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+
+    .task .task--content {
+        width: 100%;
+    }
+}
+.task .task--content .task--section{
+    width: 100%;
+    overflow-x: auto; /* 當內容過寬時，顯示滾動條 */
+    white-space: nowrap; /* 防止表格內的文字換行 */
+    margin-bottom: 16px;
+}
+
+
+.task--btngroup{
+    margin-bottom: 8px;
+}
+.task--btngroup ul{
+    display: flex;
+    gap: 30px;
+}
+
+.task--btngroup ul li a{
+text-decoration: none;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.5;
+margin-bottom: 8px;
+    color: rgb(33, 37, 41);
+}
+.task--btngroup ul li a:hover{
+color: black;
+}
+
+.task--inputgroup ul{
+    display: flex;
+    gap: 6px;
+}
+
+.task--inputgroup ul li select{
+    padding: 6px 36px 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(33, 37, 41);
+    border-radius: 6px;
+    border: 1px solid rgb(206, 212, 218);
+}
+
+.task--inputgroup ul li input{
+    padding: 6px ;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(33, 37, 41);
+    border-radius: 6px;
+    border: 1px solid rgb(206, 212, 218);
+}
