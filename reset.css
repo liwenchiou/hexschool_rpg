@@ -123,6 +123,7 @@ img {
 	max-width: 100%;
 	height: auto;
 	  object-fit: cover;
+	  /* display: block; */
 }
 
 /*不計算padding 和 border*/

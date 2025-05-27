@@ -1,9 +1,31 @@
 .container {
-    max-width: 960px;
+    max-width: 1296px;
     padding: 0 12px;
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
+@media(max-width:1299px){
+    .container {
+    max-width: 1116px;
+    }
+}
+@media(max-width:1199px){
+    .container {
+    max-width: 936px;
+    }
+}
+@media(max-width:991px){
+    .container {
+    max-width: 696px;
+    }
+}
+@media(max-width:767px){
+    .container {
+    max-width: 516px;
+    }
+}
+
+
 
 nav {
     width: 100vw;
@@ -20,10 +42,10 @@ nav .container ul {
     display: flex;
     align-items: center;
     gap: 32px;
+    justify-content: center;
 }
 
 nav .container ul li a {
-    margin-right: 40px;
     cursor: pointer;
 }
 
@@ -54,7 +76,7 @@ nav .container ul li button:hover {
     background: url("./images/MTIwNjI1NDM2NDk2MDMwODQxOTE=_2025-03-13T08_39_15Z.jpeg");
     background-size: cover;
     /* 確保圖片填滿容器 */
-    background-position: center;
+    background-position: top;
     /* 讓圖片置中 */
     background-repeat: no-repeat;
     /* 避免重複顯示 */
@@ -106,24 +128,183 @@ nav .container ul li button:hover {
     cursor: pointer;
 }
 
-.tasklist--title h2{
+.tasklist {
+    margin-bottom: 32px;
+}
+
+.tasklist--title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.tasklist--title h2 {
     font-size: 23px;
     font-weight: 700;
     line-height: 1.2;
     color: rgb(61, 89, 80);
 }
-.tasklist--title .title--btn{
+
+.tasklist--title .title--btn {
     display: flex;
     align-items: center;
 }
-.tasklist--title .title--btn a{
+
+.tasklist--title .title--btn a {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    color:  rgb(61, 89, 80);
+    color: rgb(61, 89, 80);
 }
 
-.tasklist--title .title--btn i{
+.tasklist--title .title--btn i {
     font-size: 20px;
 
+}
+
+.tasklist--task {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.tasklist--task li {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:992px) {
+    .tasklist--task li {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.task--img {
+    /* width: 30%; */
+    margin-bottom: 16px;
+}
+
+.task--img img {
+    border-radius: 10px;
+}
+
+.task--content {
+    /* background-color: red; */
+    width: 100%;
+    flex: 1;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+}
+
+.task--content h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgb(33, 37, 41);
+}
+
+.task--content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(121, 139, 134);
+    margin-bottom: 4px;
+}
+
+.task--content a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    cursor: pointer;
+    background-color: gba(0, 0, 0, 0);
+    text-decoration: none;
+    color: rgb(61, 89, 80);
+}
+
+.task--content a i {
+    display: none;
+}
+
+.task--content a:hover {
+    text-decoration: underline;
+}
+
+.task--content a:hover i {
+    display: inline;
+    /* 鼠标悬停时显示 */
+    font-size: 18px;
+}
+
+.courselist {}
+
+.courselist--title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.courselist--title h2 {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgb(61, 89, 80);
+}
+
+.courselist--title .title--btn {
+    display: flex;
+    align-items: center;
+}
+
+.courselist--title .title--btn a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(61, 89, 80);
+}
+
+.courselist--title .title--btn i {
+    font-size: 20px;
+
+}
+
+.courselist--course li {
+
+    background-color: #fff;
+    border: 1px solid rgb(237, 240, 239);
+    box-shadow: rgba(0, 0, 0, 0.05) 4px 4px 8px 0px;
+    width: 40%;
+    border-radius: 5px;
+}
+
+@media(max-width:992px) {
+    .courselist--course li {
+        width: 100%;
+    }
+}
+
+.course--content {
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.course--content h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+
+.course--content a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+    margin-bottom: 4px;
 }
