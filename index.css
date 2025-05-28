@@ -49,7 +49,7 @@ nav .container ul li a {
     cursor: pointer;
 }
 
-nav .container ul li button {
+nav .container ul li a {
     padding: 12px 8px;
     color: rgb(61, 89, 80);
     font-weight: 400;
@@ -60,7 +60,7 @@ nav .container ul li button {
     cursor: pointer;
 }
 
-nav .container ul li button:hover {
+nav .container ul li a:hover {
     color: #fff;
     background-color: rgb(61, 89, 80);
 

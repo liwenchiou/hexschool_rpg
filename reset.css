@@ -124,6 +124,7 @@ img {
 	height: auto;
 	  object-fit: cover;
 	  /* display: block; */
+	  height: 100%;
 }
 
 /*不計算padding 和 border*/

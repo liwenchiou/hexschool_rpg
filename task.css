@@ -139,22 +139,29 @@ nav .container ul li button:hover {
     line-height: 1.5;
     font-weight: 700;
 }
-.task .task--content .table--section{
+
+.task .task--content .table--section {
     width: 100%;
-    overflow-x: auto; /* 當內容過寬時，顯示滾動條 */
-    white-space: nowrap; /* 防止表格內的文字換行 */
+    overflow-x: auto;
+    /* 當內容過寬時，顯示滾動條 */
+    white-space: nowrap;
+    /* 防止表格內的文字換行 */
     margin-bottom: 16px;
 }
-.task .task--content table{
 
-        width: max-content; /* 讓表格寬度根據內容自動延伸 */
+.task .task--content table {
+
+    width: max-content;
+    /* 讓表格寬度根據內容自動延伸 */
     border-collapse: collapse;
 }
 
-td, th {
+td,
+th {
     padding: 10px;
     border: 1px solid #ccc;
-    white-space: nowrap; /* 讓每個欄位的內容不換行 */
+    white-space: nowrap;
+    /* 讓每個欄位的內容不換行 */
 }
 
 .task .task--content table thead {
@@ -186,7 +193,7 @@ td, th {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-/* 
+    /* 
     white-space: nowrap; */
 }
 
@@ -216,40 +223,49 @@ td, th {
         width: 100%;
     }
 }
-.task .task--content .task--section{
+
+.task .task--content .task--section {
     width: 100%;
-    overflow-x: auto; /* 當內容過寬時，顯示滾動條 */
-    white-space: nowrap; /* 防止表格內的文字換行 */
+    overflow-x: auto;
+    /* 當內容過寬時，顯示滾動條 */
+    white-space: nowrap;
+    /* 防止表格內的文字換行 */
     margin-bottom: 16px;
 }
 
 
-.task--btngroup{
+.task--btngroup {
     margin-bottom: 8px;
 }
-.task--btngroup ul{
+
+.task--btngroup ul {
     display: flex;
     gap: 30px;
 }
 
-.task--btngroup ul li a{
-text-decoration: none;
-font-size: 16px;
-font-weight: 400;
-line-height: 1.5;
-margin-bottom: 8px;
+.task--btngroup ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 8px;
     color: rgb(33, 37, 41);
 }
-.task--btngroup ul li a:hover{
-color: black;
+
+.task--btngroup ul li a:hover {
+    color: black;
 }
 
-.task--inputgroup ul{
+.task--inputgroup {
+    margin-bottom: 24px;
+}
+
+.task--inputgroup ul {
     display: flex;
     gap: 6px;
 }
 
-.task--inputgroup ul li select{
+.task--inputgroup ul li select {
     padding: 6px 36px 6px 12px;
     font-size: 16px;
     font-weight: 400;
@@ -259,12 +275,79 @@ color: black;
     border: 1px solid rgb(206, 212, 218);
 }
 
-.task--inputgroup ul li input{
-    padding: 6px ;
+.task--inputgroup ul li input {
+    padding: 6px;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     color: rgb(33, 37, 41);
     border-radius: 6px;
     border: 1px solid rgb(206, 212, 218);
+}
+
+.task--list ul li {
+    width: 77%;
+    display: flex;
+    border: 1px solid rgb(222, 226, 230);
+    margin-bottom: 16px;
+}
+
+.task--list--img {
+    width: 20%;
+
+}
+
+/* .task--list--img img{
+    height: 100%;
+} */
+
+.task--list--content {
+    width: 80%;
+    padding: 8px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.task--list--content h2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: rgb(0, 37, 26);
+    margin-bottom: 8px;
+}
+
+.task--list--content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(33, 37, 41, 0.75);
+    margin-bottom: 16px;
+}
+
+.list--content--group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list--content--group h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(0, 37, 26);
+}
+
+.list--content--group a {
+    background-color: rgb(61, 89, 80);
+    border-radius: 6px;
+    border: 1px solid rgb(61, 89, 80);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 6px 16px;
+}
+
+.list--content--group a:hover {
+    background-color: rgb(90, 114, 106);
 }
