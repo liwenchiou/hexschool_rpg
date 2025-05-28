@@ -1,0 +1,272 @@
+.container {
+    max-width: 1320px;
+    padding: 0px 12px;
+    margin: 0 auto;
+}
+
+
+nav {
+    width: 100vw;
+    margin-bottom: 64px;
+    padding: 8px 0px;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .container ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    justify-content: center;
+}
+
+nav .container ul li a {
+    cursor: pointer;
+}
+
+nav .container ul li a {
+    padding: 12px 8px;
+    color: rgb(61, 89, 80);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav .container ul li a:hover {
+    color: #fff;
+    background-color: rgb(61, 89, 80);
+
+}
+
+.nav--button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+main .container .banner {
+    background: url("./images/MTIwNjI1NDM2NDk2MDMwODQxOTE=_2025-03-13T08_39_15Z.jpeg");
+    background-size: cover;
+    /* 確保圖片填滿容器 */
+    background-position: center;
+    /* 讓圖片置中 */
+    background-repeat: no-repeat;
+    /* 避免重複顯示 */
+    padding: 40px;
+    height: 360px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+main .container .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, #fff0, #fff);
+}
+
+main .container .banner .content {
+    position: absolute;
+    z-index: 1 !important;
+    bottom: 10%;
+}
+
+main .container .banner .content h1 {
+    color: rgb(0, 37, 26);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+main .container .banner .content h2 {
+    color: rgb(61, 89, 80);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.title--section {
+    margin-bottom: 24px;
+}
+
+.title--section ul {
+    display: flex;
+    gap: 12px;
+    height: 100%;
+    margin-bottom: 24px;
+}
+
+/* .title--section ul li {
+    padding: 12px;
+} */
+
+.title--section .title--section--1 {
+    width: 85%;
+    border: 1px solid rgb(222, 226, 230);
+    border-radius: 4px;
+}
+
+.title--section .title--section--1 ul {
+    display: flex;
+    padding: 24px;
+}
+
+.title--section .title--section--1 ul li {
+    width: 50%;
+    /* border: 1px solid black; */
+}
+
+.title--section .title--section--1 ul li h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: rgb(61, 89, 80);
+    margin-bottom: 8px;
+}
+
+.title--section .title--section--1 ul li p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+.title--section .title--section--2 {
+    width: 15%;
+    /* border: 1px solid black; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    /* background-color: red; */
+}
+
+.title--section--2 {
+    padding: 24px;
+    width: 100%;
+    border: 1px solid rgb(222, 226, 230);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 24px;
+}
+
+.title--section--2 h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: rgb(61, 89, 80);
+}
+
+.title--section--2 p {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.title--section--2 span {
+    display: block;
+    background-color: rgb(61, 89, 80);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid black;
+    padding: 0px 24px;
+    width: 100%;
+}
+
+.title--section--2::after {
+    content: "任務已完成";
+    display: block;
+    background-color: rgb(61, 89, 80);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid black;
+    padding: 0px 24px;
+    width: 100%;
+}
+
+.content--section {
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.content--section h4 {
+    color: color rgb(61, 89, 80);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.content--section h3 {
+    color: rgb(0, 37, 26);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.content--section ol {
+    padding-left: 32px;
+    margin-bottom: 16px;
+}
+
+.content--section ol li,
+p {
+    list-style-type: decimal;
+    color: color rgb(61, 89, 80);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.reback--section {
+    background-color: rgb(237, 240, 239);
+    padding: 56px 0px 160px 0px;
+
+}
+
+.reback--section h2 {
+    background-color: rgb(121, 139, 134);
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.reback--section p {
+    color: rgb(0, 37, 26);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
