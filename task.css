@@ -28,7 +28,7 @@ nav .container ul li a {
     cursor: pointer;
 }
 
-nav .container ul li button {
+nav .container ul li a {
     padding: 12px 8px;
     color: rgb(61, 89, 80);
     font-weight: 400;
@@ -37,9 +37,10 @@ nav .container ul li button {
     border: none;
     background-color: #fff;
     cursor: pointer;
+    text-decoration: none;
 }
 
-nav .container ul li button:hover {
+nav .container ul li a:hover {
     color: #fff;
     background-color: rgb(61, 89, 80);
 
@@ -59,7 +60,7 @@ nav .container ul li button:hover {
 
 .task .task--sidebar {
     width: 31%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 0px 12px;
 }
 
@@ -99,7 +100,7 @@ nav .container ul li button:hover {
 
 .task .task--content {
     width: 69%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 0px 12px;
 }
 
